@@ -49,24 +49,13 @@
               <p>Dashboard</p>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <i class="nc-icon nc-diamond"></i>
-              <p>Chat</p>
-            </a>
-          </li>
+ 
           <li>
             <a href="#">
               <i class="nc-icon nc-pin-3"></i>
               <p>Weather Data</p>
             </a>
-          </li>
-           <li>
-            <a href="#">
-              <i class="nc-icon nc-pin-3"></i>
-              <p>Map</p>
-            </a>
-          </li>
+          </li>   
           <li>
             <a href="#">
               <i class="nc-icon nc-bell-55"></i>
@@ -81,12 +70,7 @@
           </li>
            
           
-          <li class="active-pro">
-            <a href="#">
-              <i class="nc-icon nc-spaceship"></i>
-              <p>Upgrade to PRO</p>
-            </a>
-          </li>
+           
         </ul>
       </div>
     </div>
@@ -169,17 +153,17 @@
               <div class="card-body">
                 <div class="author">
                   <a href="#">
-                    <img class="avatar border-gray" src="<?php echo base_url().'/assets/img/mike.jpg';?>" alt="...">
-                    <h5 class="title">Chet Faker</h5>
+                    <img class="avatar border-gray" src="<?php echo base_url().'/assets/img/logo-small.png';?>" alt="...">
+                    <h5 class="title">Smart Farmer</h5>
                   </a>
                   <p class="description">
-                    @chetfaker
+                     
                   </p>
                 </div>
                 <p class="description text-center">
-                  "I like the way you work it
-                  <br> No diggity
-                  <br> I wanna bag it up"
+                  "Farm Smart"
+                  <br>  
+                  <br>   
                 </p>
               </div>
               <div class="card-footer">
@@ -187,28 +171,28 @@
                 <div class="button-container">
                   <div class="row">
                     <div class="col-lg-3 col-md-6 col-6 ml-auto">
-                      <h5>12
+                      <h5> 
                         <br>
-                        <small>Files</small>
+                        <small> </small>
                       </h5>
                     </div>
                     <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
-                      <h5>2GB
+                      <h5> 
                         <br>
-                        <small>Used</small>
+                        <small> </small>
                       </h5>
                     </div>
                     <div class="col-lg-3 mr-auto">
-                      <h5>24,6$
+                      <h5> 
                         <br>
-                        <small>Spent</small>
+                        <small> </small>
                       </h5>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card">
+           <!--  <div class="card">
               <div class="card-header">
                 <h4 class="card-title">Team Members</h4>
               </div>
@@ -273,7 +257,7 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="col-md-8">
             <div class="card card-user">
@@ -286,13 +270,13 @@
                     <div class="col-md-5 pr-1">
                       <div class="form-group">
                         <label>Company (disabled)</label>
-                        <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
+                        <input type="text" class="form-control" disabled="" placeholder="Company" value="Enter Company Name.">
                       </div>
                     </div>
                     <div class="col-md-3 px-1">
                       <div class="form-group">
                         <label>Username</label>
-                        <input type="text" class="form-control" placeholder="Username" value="michael23">
+                        <input type="text" class="form-control" placeholder="Username" value="Enter Name">
                       </div>
                     </div>
                     <div class="col-md-4 pl-1">
@@ -306,13 +290,13 @@
                     <div class="col-md-6 pr-1">
                       <div class="form-group">
                         <label>First Name</label>
-                        <input type="text" class="form-control" placeholder="Company" value="Chet">
+                        <input type="text" class="form-control" placeholder="Company" value=" First Name">
                       </div>
                     </div>
                     <div class="col-md-6 pl-1">
                       <div class="form-group">
                         <label>Last Name</label>
-                        <input type="text" class="form-control" placeholder="Last Name" value="Faker">
+                        <input type="text" class="form-control" placeholder="Last Name" value="Last Name">
                       </div>
                     </div>
                   </div>
@@ -320,7 +304,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>Address</label>
-                        <input type="text" class="form-control" placeholder="Home Address" value="Melbourne, Australia">
+                        <input type="text" class="form-control" placeholder="Home Address" value=" Enter address">
                       </div>
                     </div>
                   </div>
@@ -328,7 +312,7 @@
                     <div class="col-md-4 pr-1">
                       <div class="form-group">
                         <label>City</label>
-                        <input type="text" class="form-control" placeholder="City" value="Melbourne">
+                        <input type="text" class="form-control" placeholder="City" value="City">
                       </div>
                     </div>
                     <div class="col-md-4 px-1">
@@ -348,7 +332,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label>About Me</label>
-                        <textarea class="form-control textarea">Oh so, your weak rhyme You doubt I'll bother, reading into it</textarea>
+                        <textarea class="form-control textarea">Description</textarea>
                       </div>
                     </div>
                   </div>
@@ -363,7 +347,7 @@
           </div>
         </div>
       </div>
-      <footer class="footer footer-black  footer-white ">
+      <!-- <footer class="footer footer-black  footer-white ">
         <div class="container-fluid">
           <div class="row">
             <nav class="footer-nav">
@@ -389,7 +373,7 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer> -->
     </div>
   </div>
   <!--   Core JS Files   -->

@@ -861,8 +861,10 @@ class Ion_auth_model extends CI_Model
 
 		$this->db->insert($this->tables['users'], $user_data);
 
-		$id = $this->db->insert_id($this->tables['users'] . '_id_seq');
+		$id  = $this->db->insert_id($this->tables['users'] . '_id_seq');
 
+		$ID = $this->db->insert_id;
+ 		$_SESSION['ID'] = $ID;
 		// add in groups array if it doesn't exists and stop adding into default group if default group ids are set
 		if (isset($default_group->id) && empty($groups))
 		{

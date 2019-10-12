@@ -47,48 +47,27 @@
               <p>Dashboard</p>
             </a>
           </li>
-          <li>
-            <a href="./icons.html">
-              <i class="nc-icon nc-diamond"></i>
-              <p>Icons</p>
-            </a>
-          </li>
-          <li>
-            <a href="./map.html">
-              <i class="nc-icon nc-pin-3"></i>
-              <p>Maps</p>
-            </a>
-          </li>
+        
           <li class="active ">
-            <a href="#">
+            <a href="/SmartFarmer/SmartFarmer_App/notification">
               <i class="nc-icon nc-bell-55"></i>
               <p>Notifications</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/SmartFarmer/SmartFarmer_App/profile">
               <i class="nc-icon nc-single-02"></i>
               <p>User Profile</p>
             </a>
           </li>
+           
           <li>
-            <a href="#">
-              <i class="nc-icon nc-tile-56"></i>
-              <p>Table List</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
+            <a href="/SmartFarmer/SmartFarmer_App/report">
               <i class="nc-icon nc-caps-small"></i>
-              <p>Typography</p>
+              <p>Farm Report</p>
             </a>
           </li>
-          <li class="active-pro">
-            <a href="#">
-              <i class="nc-icon nc-spaceship"></i>
-              <p>Upgrade to PRO</p>
-            </a>
-          </li>
+           
         </ul>
       </div>
     </div>

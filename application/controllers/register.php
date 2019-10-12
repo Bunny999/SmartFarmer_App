@@ -4,12 +4,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Register extends MY_Controller
 {
 
-    public function index()
+    public function index() 
     {
         $this->load->library('form_validation');
         $this->form_validation->set_rules('first_name', 'First name','trim|required');
         $this->form_validation->set_rules('last_name', 'Last name','trim|required');
         $this->form_validation->set_rules('username','Username','trim|required|is_unique[users.username]');
+        $this->form_validation->set_rules('phone',  'required');
+        $this->form_validation->set_rules('acres',  'required');
+
         $this->form_validation->set_rules('email','Email','trim|valid_email|required');
         $this->form_validation->set_rules('password','Password','trim|min_length[8]|max_length[20]|required');
         $this->form_validation->set_rules('confirm_password','Confirm password','trim|matches[password]|required');
@@ -26,10 +29,14 @@ class Register extends MY_Controller
             $username = $this->input->post('username');
             $email = $this->input->post('email');
             $password = $this->input->post('password');
+            $phone = $this->input->post('phone');
+            $acres = $this->input->post('acres');
 
             $additional_data = array(
                 'first_name' => $first_name,
-                'last_name' => $last_name
+                'last_name' => $last_name,
+                'phone' => $phone,
+                'acres' => $acres
             );
 
             $this->load->library('ion_auth');

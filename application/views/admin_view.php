@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <style  >
+    <head>
+        <style type="text/css">
 .form-style-5{
-   max-width: 500px;
+    max-width: 500px;
     padding: 10px 20px;
-     
+    background: #f4f7f8;
     margin: 10px auto;
     padding: 20px;
-    background: #1faa00;
+   background: #1faa00;
     border-radius: 8px;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -21,7 +21,7 @@
 }
 .form-style-5 label {
     display: block;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
 }
 .form-style-5 input[type="text"],
 .form-style-5 input[type="date"],
@@ -103,32 +103,37 @@
 {
     background: #109177;
 }
-</style> 
-
+.adminn{
+    text-decoration: none;
+    color: black;
+    padding-left: 580px;
+}
+</style>
  </head>
- 
-<div class="container"> 
-    <?php
+ <?php
     echo isset($_SESSION['auth_message']) ? $_SESSION['auth_message'] : FALSE;
     ?>
-</div>
-<div class="form-style-5">
-    <legend>  Register Here</legend>
-<form method="post" action="<?php echo base_url()?>register/index">
+
+    <div class="form-style-5">
+<form method="post" action="<?php echo base_url()?>user/login">
 <fieldset>
- <input type="text" name="first_name" placeholder="First name">
-<input type="text" name="last_name" placeholder="Second name">
-<input type="text" name="email" placeholder="Email">  
-<input type="text" name="phone" placeholder="Phone Number">
-<input type="text" name="acres" placeholder="Number of Acres">
-<input type="text" name="password" placeholder="Password"> 
-<input type="text" name="confirm_password" placeholder="Confirm Password">
+<legend> Admin Module</legend>
 <input type="text" name="username" placeholder="Username">
- 
+<input type="text" name="password" placeholder="Password"> 
 
 </fieldset>
- <input type="submit" value="Register" />
+ <input type="submit" value="Log In" />
 </form>
-     
-</div>   
-</html>
+
+ 
+</div>
+<a class="adminn" href="/SmartFarmer/SmartFarmer_App/user/login">Back to User Module</a>
+<!-- <div class="container"><?php //echo anchor('user/logout', 'Logout');?></div>
+</div> -->
+    </html>
+
+ 
+
+ 
+    
+    

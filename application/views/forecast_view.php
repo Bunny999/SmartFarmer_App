@@ -27,10 +27,10 @@
 		<div class="site-content">
 			<div class="site-header">
 				<div class="container">
-					<a href="index.html" class="branding">
+					<a href="/SmartFarmer/SmartFarmer_App/" class="branding">
 						<img src="<?php echo base_url(). '/assets/images/logo.png';?>" alt="" class="logo">
 						<div class="logo-type">
-							<h1 class="site-title">SmartFarmer</h1>
+						<a href="/SmartFarmer/SmartFarmer_App/"> 	<h1 class="site-title">SmartFarmer</h1></a>
 							<small class="site-description">Farm Smart</small>
 						</div>
 					</a>
@@ -75,7 +75,7 @@
 					</div>
 				</div>
 			</div>
-			<main class="main-content">
+			<!-- <main class="main-content">
 				<div class="fullwidth-block">
 					<div class="container">
 						<h2 class="section-title">Maize Facts</h2>
@@ -160,7 +160,7 @@
 									</li>
 								</ul>
 							</div>
-							<!-- <div class="col-md-4">
+							  <div class="col-md-4">
 								<h2 class="section-title">Weather analyssis</h2>
 								<ul class="arrow-list">
 									<li><a href="#">Accusantium doloremque laudantium rem aperiam</a></li>
@@ -173,10 +173,10 @@
 								</ul>
 							</div>
 							 
-						</div> -->
+						</div>  
 					</div>
 				</div>
-			</main> <!-- .main-content -->
+			</main>  --> <!-- .main-content -->
  
 		</div>
 		

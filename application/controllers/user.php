@@ -7,12 +7,10 @@ class User extends MY_Controller {
     {
         parent::__construct();
     $this->load->library('ion_auth');
+    $this->load->library('session');
   }
 
-    public function index()
-    {
-        $this->load->view('welcome_message');
-    }
+    
 
     public function login()
     {
@@ -21,7 +19,10 @@ class User extends MY_Controller {
     $this->load->library('form_validation');
         $this->form_validation->set_rules('username', 'Username', 'trim|required');
         $this->form_validation->set_rules('password', 'Password', 'required');
-        if ($this->form_validation->run() === FALSE)
+         
+
+ 
+         if ($this->form_validation->run() === FALSE)
         {
       $this->load->helper('form');
             $this->render('user/login_view');
@@ -40,6 +41,10 @@ class User extends MY_Controller {
                 redirect('user/login');
             }
         }
+    }
+     public function index()
+    {
+        $this->load->view('welcome_message',$data);
     }
 
     public function logout()

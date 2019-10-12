@@ -36,7 +36,7 @@
           </div>
         </a>
         <a href="#" class="simple-text logo-normal">
-         Smart Farmer
+          Welcome
           <!-- <div class="logo-image-big">
             <img src="../assets/img/logo-big.png">
           </div> -->
@@ -50,24 +50,14 @@
               <p>Dashboard</p>
             </a>
           </li>
-          <li>
-            <a href="<?php echo base_url().'/icons.html';?>">
-              <i class="nc-icon nc-diamond"></i>
-              <p>Chat </p>
-            </a>
-          </li>
+           
           <li>
             <a href="/SmartFarmer/SmartFarmer_App/forecast">
               <i class="nc-icon nc-pin-3"></i>
               <p> Weather Data</p>
             </a>
           </li>
-           <li>
-            <a href="/SmartFarmer/SmartFarmer_App/map">
-              <i class="nc-icon nc-pin-3"></i>
-              <p>Maps</p>
-            </a>
-          </li>
+            
           <li>
             <a href="/SmartFarmer/SmartFarmer_App/notification">
               <i class="nc-icon nc-bell-55"></i>
@@ -81,7 +71,7 @@
             </a>
           </li>
           <li>
-            <a href="<?php echo base_url().'/tables.html'; ?>">
+            <a href="/SmartFarmer/SmartFarmer_App/report">
               <i class="nc-icon nc-tile-56"></i>
               <p>Farm Report</p>
             </a>
@@ -194,12 +184,12 @@
               <div class="card-footer ">
                 <hr>
                 <div class="stats">
-                  <i class="fa fa-refresh"></i> Update Now
+                   Your Dashboard
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+         <!--  <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card card-stats">
               <div class="card-body ">
                 <div class="row">
@@ -210,8 +200,8 @@
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Revenue</p>
-                      <p class="card-title">$ 1,345
+                      <p class="card-category"></p>
+                      <p class="card-title"> 
                         <p>
                     </div>
                   </div>
@@ -224,8 +214,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          </div> -->
+          <!-- <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card card-stats">
               <div class="card-body ">
                 <div class="row">
@@ -250,8 +240,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-6">
+          </div> -->
+         <!--  <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card card-stats">
               <div class="card-body ">
                 <div class="row">
@@ -276,14 +266,14 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="row">
           <div class="col-md-12">
             <div class="card ">
               <div class="card-header ">
-                <h5 class="card-title">Users Behavior</h5>
-                <p class="card-category">24 Hours performance</p>
+                <h5 class="card-title">Maize Market Growth</h5>
+                <p class="card-category"> </p>
               </div>
               <div class="card-body ">
                 <canvas id=chartHours width="400" height="100"></canvas>
@@ -301,30 +291,28 @@
           <div class="col-md-4">
             <div class="card ">
               <div class="card-header ">
-                <h5 class="card-title">Email Statistics</h5>
-                <p class="card-category">Last Campaign Performance</p>
+                <h5 class="card-title">Fertilizer Efficiency</h5>
+                <p class="card-category"> </p>
               </div>
               <div class="card-body ">
                 <canvas id="chartEmail"></canvas>
               </div>
               <div class="card-footer ">
                 <div class="legend">
-                  <i class="fa fa-circle text-primary"></i> Opened
-                  <i class="fa fa-circle text-warning"></i> Read
-                  <i class="fa fa-circle text-danger"></i> Deleted
-                  <i class="fa fa-circle text-gray"></i> Unopened
+                  <i class="fa fa-circle text-primary"></i> pre-planted fertilisers
+                  <i class="fa fa-circle text-warning"></i>  compost manure
+                  <i class="fa fa-circle text-danger"></i> Top dressing
+                  <i class="fa fa-circle text-gray"></i> side dressing 
                 </div>
                 <hr>
-                <div class="stats">
-                  <i class="fa fa-calendar"></i> Number of emails sent
-                </div>
+               
               </div>
             </div>
           </div>
           <div class="col-md-8">
             <div class="card card-chart">
               <div class="card-header">
-                <h5 class="card-title">NASDAQ: AAPL</h5>
+                <h5 class="card-title">Maize Production Rate Analysis</h5>
                 <p class="card-category">Line Chart with Points</p>
               </div>
               <div class="card-body">
@@ -332,8 +320,8 @@
               </div>
               <div class="card-footer">
                 <div class="chart-legend">
-                  <i class="fa fa-circle text-info"></i> Tesla Model S
-                  <i class="fa fa-circle text-warning"></i> BMW 5 Series
+                  <i class="fa fa-circle text-info"></i> Produce with Fertilizer
+                  <i class="fa fa-circle text-warning"></i>Produce without Fertilizer
                 </div>
                 <hr/>
                 <div class="card-stats">
@@ -344,7 +332,7 @@
           </div>
         </div>
       </div>
-      <footer class="footer footer-black  footer-white ">
+      <!-- <footer class="footer footer-black  footer-white ">
         <div class="container-fluid">
           <div class="row">
             <nav class="footer-nav">
@@ -370,7 +358,7 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer> -->
     </div>
   </div>
   <!--   Core JS Files   -->
