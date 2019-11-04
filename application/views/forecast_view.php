@@ -12,172 +12,141 @@
 		<link href="<?php echo base_url(). '/assets/fonts/font-awesome.min.css';?>" rel="stylesheet" type="text/css">
 
 		<!-- Loading main css file -->
-		<link rel="stylesheet" href="<?php echo base_url(). '/assets/css/style.css';?>">
-		
+		  	
 		<!--[if lt IE 9]>
 		<script src="js/ie-support/html5.js"></script>
 		<script src="js/ie-support/respond.js"></script>
 		<![endif]-->
+		<style>
+			
+h1{
+  
+  font-size: 30px;
+  color: black  ;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+ background: linear-gradient(to right, #ec2F4B, #009FFF);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(201,255,255,6  .3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: bold;
+  font-size: 12px;
+  color: black;
+  border-bottom: solid 1px rgba(201,255,255,6.3);
+}
+.logo-image-small{
+	width :100px;
+	height: 100px;
+}
 
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+ /* background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);*/
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+ 
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+.simple-text{
+	text-decoration: none;
+	color: black;
+}
+/*Table Css*/
+		</style>
 	</head>
 
 
 	<body>
+		 <div class="logo">
+        <a href="http://localhost/SmartFarmer/SmartFarmer_App/" class="simple-text logo-mini">
+          <div >
+            <img  class="logo-image-small" src="<?php echo base_url().'/assets/img/logo-small.png' ;?>">
+          </div>
+        </a> 
+        <a href="http://localhost/SmartFarmer/SmartFarmer_App/" class="simple-text logo-normal">
+          Back to Home
+          <!-- <div class="logo-image-big">
+            <img src="../assets/img/logo-big.png">
+          </div> -->
+        </a>
+      </div>
+		 <section>
+
+  <h1>Weather Forecast</h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th> Date</th>
+          <th> Temperature in (Celcius)</th>
+          <th> Time</th>
+          <th>Location</th> 
+            
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+          <?php foreach($forecast_weather['list'] as $data) { ?>
+        <tr>
+          <td><?=date('d F Y', $data['dt'])?></td>
+          <td><?= $data['main']['temp']?></td>
+          <td></td>
+          <td>  </td>
+        </tr>
+       
+  <?php } ?> 
+         
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
 		
-		<div class="site-content">
-			<div class="site-header">
-				<div class="container">
-					<a href="/SmartFarmer/SmartFarmer_App/" class="branding">
-						<img src="<?php echo base_url(). '/assets/images/logo.png';?>" alt="" class="logo">
-						<div class="logo-type">
-						<a href="/SmartFarmer/SmartFarmer_App/"> 	<h1 class="site-title">SmartFarmer</h1></a>
-							<small class="site-description">Farm Smart</small>
-						</div>
-					</a>
-
-					 
-
-					<div class="mobile-navigation"></div>
-
-				</div>
-			</div> <!-- .site-header -->
-
-			 
-			<div class="forecast-table">
-				<div class="container">
-					<div class="forecast-container">
-							<?php foreach($forecast_weather['list'] as $data) { ?>
-  						<div class="today forecast">
-							<div class="forecast-header">
-								<div class="day"><?=date('d F Y', $data['dt'])?></div>
- 							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="location"> </div>
-								<div class="degree">
-									<div class="num"><?= $data['main']['temp']?><sup>o</sup></div>
-									<div class="forecast-icon">
-										<img src="<?php echo base_url(). '/assets/images/icons/icon-1.svg';?>" alt="" width=90>
-									</div>	
-								</div>
- 								<span><img src="<?php echo base_url(). '/assets/images/icon-umberella.png';?>" alt="">20%</span>
-								<span><img src="<?php echo base_url(). '/assets/images/icon-wind.png';?>" alt="">18km/h</span>
-								<span><img src="<?php echo base_url(). '/assets/images/icon-compass.png';?>" alt="">East</span>
- 					</div>
-				</div>
-
-						 <?php } ?> 
-						 
-						 
-						 
-						 
-					 
-						 
-					</div>
-				</div>
-			</div>
-			<!-- <main class="main-content">
-				<div class="fullwidth-block">
-					<div class="container">
-						<h2 class="section-title">Maize Facts</h2>
-						<div class="row">
-							<div class="col-md-3 col-sm-6">
-								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="<?php echo base_url(). '/assets/images/live-camera-1.jpg';?>" alt=""></figure>
-									<h3 class="location">New York</h3>
-									<small class="date">8 oct, 8:00AM</small>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="<?php echo base_url(). '/assets/images/live-camera-2.jpg';?>" alt=""></figure>
-									<h3 class="location">Los Angeles</h3>
-									<small class="date">8 oct, 8:00AM</small>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="<?php echo base_url(). '/assets/images/live-camera-3.jpg';?>" alt=""></figure>
-									<h3 class="location">Chicago</h3>
-									<small class="date">8 oct, 8:00AM</small>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="<?php echo base_url(). '/assets/images/live-camera-4.jpg';?>" alt=""></figure>
-									<h3 class="location">London</h3>
-									<small class="date">8 oct, 8:00AM</small>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="fullwidth-block" data-bg-color="#262936">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="news">
-									<div class="date">06.10</div>
-									<h3><a href="#">Doloremque laudantium totam sequi </a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo saepe assumenda dolorem modi, expedita voluptatum ducimus necessitatibus. Asperiores quod reprehenderit necessitatibus harum, mollitia, odit et consequatur maxime nisi amet doloremque.</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="news">
-									<div class="date">06.10</div>
-									<h3><a href="#">Doloremque laudantium totam sequi </a></h3>
-									<p>Nobis architecto consequatur ab, ea, eum autem aperiam accusantium placeat vitae facere explicabo temporibus minus distinctio cum optio quis, dignissimos eius aspernatur fuga. Praesentium totam, corrupti beatae amet expedita veritatis.</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="news">
-									<div class="date">06.10</div>
-									<h3><a href="#">Doloremque laudantium totam sequi </a></h3>
-									<p>Enim impedit officiis placeat qui recusandae doloremque possimus, iusto blanditiis, quam optio delectus maiores. Possimus rerum, velit cum natus eos. Cumque pariatur beatae asperiores, esse libero quas ad dolorem. Voluptates.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="fullwidth-block">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-4">
-								<h2 class="section-title">Application features</h2>
-								<ul class="arrow-feature">
-									<li>
-										<h3>Natus error sit voluptatem accusantium</h3>
-										<p>Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
-									</li>
-									<li>
-										<h3>Natus error sit voluptatem accusantium</h3>
-										<p>Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
-									</li>
-									<li>
-										<h3>Natus error sit voluptatem accusantium</h3>
-										<p>Doloremque laudantium totam rem aperiam Inventore veritatis et quasi architecto beatae vitae.</p>
-									</li>
-								</ul>
-							</div>
-							  <div class="col-md-4">
-								<h2 class="section-title">Weather analyssis</h2>
-								<ul class="arrow-list">
-									<li><a href="#">Accusantium doloremque laudantium rem aperiam</a></li>
-									<li><a href="#">Eaque ipsa quae ab illo inventore veritatis quasi</a></li>
-									<li><a href="#">Architecto beatae vitae dicta sunt explicabo</a></li>
-									<li><a href="#">Nemo enim ipsam voluptatem quia voluptas</a></li>
-									<li><a href="#">Aspernatur aut odit aut fugit, sed quia consequuntur</a></li>
-									<li><a href="#">Magni dolores eos qui ratione voluptatem sequi</a></li>
-									<li><a href="#">Neque porro quisquam est qui dolorem ipsum quia</a></li>
-								</ul>
-							</div>
-							 
-						</div>  
-					</div>
-				</div>
-			</main>  --> <!-- .main-content -->
- 
+		 
 		</div>
 		
 		<script src="<?php echo base_url(). '/assets/js/jquery-1.11.1.min.js';?>"></script>

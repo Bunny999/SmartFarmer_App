@@ -115,7 +115,7 @@
     ?>
 
     <div class="form-style-5">
-<form method="post" action="<?php echo base_url()?>user/login">
+<form method="post" action="<?php echo base_url()?>admlogin/login">
 <fieldset>
 <legend> Admin Module</legend>
 <input type="text" name="username" placeholder="Username">
